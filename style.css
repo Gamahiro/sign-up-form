@@ -5,6 +5,8 @@ body {
     margin: 0;
     display: flex;
     --defMargin: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -12,12 +14,13 @@ body {
 .sidebar {
     background-image: url('assets/bgimg.jpg');
     background-position: center;
-    background-size: 1300px 1300px;
+    background-size: 1400px 1400px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 40%;
+    min-width: 40%;
+    width: 350px;
 }
 
 .sidebar .header {
@@ -42,15 +45,16 @@ a {
 }
 
 .containerMain {
-    max-width: 500px 55%;
+    min-width: 60%;
+    width: 500px;
     background-color: #5e827c;
 
 }
 
 .hero {
-width: 500px;
 margin: 200px 50px 50px 0px;
 padding-left: 5%;
+width: 500px;
 }
 form {
     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.397);
@@ -93,4 +97,16 @@ input {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.548);
     font-size: 18px;
+}
+
+input:focus {
+    outline: 2px solid rgb(61, 181, 221);
+}
+
+input:valid {
+    outline: 2px solid green;
+}
+
+input:invalid {
+    outline: 2px solid red;
 }
